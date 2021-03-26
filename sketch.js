@@ -9,7 +9,7 @@ var hero,monster,rope,ground;
 var gameState = "onSling";
 
 function preload() {
-  getBackgroundImg();
+  backgroundImg();
 }
 
 function setup() {
@@ -67,7 +67,7 @@ function keyPressed(){
   }
 }
 
-async function getBackgroundImg(){
+async function backgroundImg(){
   var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
   var responseJSON = await response.json();
 
